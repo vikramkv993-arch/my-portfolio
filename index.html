@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#000000">
+  <meta name="description" content="Vikram K V's student portfolio — computer science, web development, education, and certifications.">
+  <title>Vikram K V | Student Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Vikram K V, home">Vikram<span>.</span></a>
+    <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav" id="primary-navigation" aria-label="Main navigation">
+      <a class="nav-link active" href="#home">Home</a>
+      <a class="nav-link" href="#about">About</a>
+      <a class="nav-link" href="#education">Education</a>
+      <a class="nav-link" href="#certification">Certification</a>
+      <a class="nav-link" href="#projects">Projects</a>
+      <a class="nav-link" href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="home section" id="home" aria-labelledby="home-title">
+      <div class="home-copy reveal">
+        <p class="home-role">Computer Science Student</p>
+        <h1 id="home-title">Hi, I'm <span>Vikram</span><br>K V From India</h1>
+        <p class="home-intro">Curious about technology, passionate about learning, and building my future one line of code at a time.</p>
+        <div class="home-actions">
+          <a class="button button-primary" href="#about">Discover More <span aria-hidden="true">↓</span></a>
+          <a class="button button-outline" href="#contact">Get In Touch</a>
+        </div>
+        <div class="home-socials" aria-label="Contact links">
+          <a class="social-link" href="mailto:vikramkv993@gmail.com" aria-label="Email Vikram">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg>
+          </a>
+          <a class="social-link" href="tel:+910000000000" aria-label="Call Vikram">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3H4a1 1 0 0 0-1 1c0 9.4 7.6 17 17 17a1 1 0 0 0 1-1v-3l-5-2-2 3a14 14 0 0 1-7-7l3-2-2-5Z"/></svg>
+          </a>
+          <a class="social-link" href="#certification" aria-label="View Vikram's certifications">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1.1 6.2L12 17.3l-5.6 2.9 1.1-6.2L3 9.6l6.2-.9L12 3Z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="home-portrait reveal">
+        <img src="Photo_blackbackground.jpeg" alt="Portrait of Vikram K V" fetchpriority="high">
+      </div>
+      <a class="scroll-cue" href="#about" aria-label="Scroll to About section"><span></span> Scroll to explore</a>
+    </section>
+
+    <section class="about section section-alt" id="about" aria-labelledby="about-title">
+      <div class="section-shell about-layout">
+        <div class="about-photo reveal">
+          <img src="Photo_blackbackground.jpeg" alt="Portrait of Vikram K V" loading="lazy">
+        </div>
+        <div class="about-copy reveal">
+          <h2 class="section-title" id="about-title">About <span>Me</span></h2>
+          <p class="about-description">I’m a Computer Science &amp; Engineering student at AJ Institute of Engineering and Technology. I enjoy learning how software works and creating useful things with code. My current interests include Java, web development, and artificial intelligence.</p>
+          <div class="about-tabs" role="tablist" aria-label="About Vikram">
+            <button class="about-tab active" id="tab-skills" type="button" role="tab" aria-selected="true" aria-controls="panel-skills" tabindex="0">Skills</button>
+            <button class="about-tab" id="tab-education" type="button" role="tab" aria-selected="false" aria-controls="panel-education" tabindex="-1">Education</button>
+          </div>
+          <div class="about-panel" id="panel-skills" role="tabpanel" aria-labelledby="tab-skills">
+            <ul class="about-list">
+              <li><span>Python,C Programming and Java</span><span>Programming fundamentals</span></li>
+              <li><span>Web Development</span><span>HTML, CSS &amp; JavaScript</span></li>
+              <li><span>AI &amp; Machine Learning</span><span>Coursework and foundations</span></li>
+            </ul>
+          </div>
+          <div class="about-panel" id="panel-education" role="tabpanel" aria-labelledby="tab-education" hidden>
+            <ul class="about-list">
+              <li><span>B.E. Computer Science &amp; Engineering</span><span>AJ Institute of Engineering and Technology</span></li>
+              <li><span>Undergraduate student</span><span>Mangaluru, Karnataka</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="education section" id="education" aria-labelledby="education-title">
+      <div class="section-shell">
+        <div class="section-heading reveal">
+          <h2 class="section-title" id="education-title">My Education</h2>
+        </div>
+        <div class="education-grid">
+          <article class="education-card reveal">
+            <div class="education-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M2.5 9.2 12 4l9.5 5.2L12 14.5 2.5 9.2Z"/><path d="M6.5 11.6v5.1c3.4 2.7 7.6 2.7 11 0v-5.1M21.5 9.2v6"/></svg>
+            </div>
+            <h3>B.E. Computer Science</h3>
+            <p>Studying Computer Science &amp; Engineering at AJ Institute of Engineering and Technology, building a strong foundation in computing and software development.</p>
+            <a class="text-link" href="#about">Learn more <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="education-card education-card-featured reveal">
+            <div class="education-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 3.5 14.7 9l6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1-4.4-4.3L9.3 9 12 3.5Z"/></svg>
+            </div>
+            <h3>AI &amp; Machine Learning</h3>
+            <p>Completed an applied course at Kakunje Software, exploring the foundations of artificial intelligence and machine learning.</p>
+            <a class="text-link" href="#certification">Learn more <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="education-card reveal">
+            <div class="education-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="4" y="3.5" width="16" height="17" rx="2"/><path d="M8 8h8M8 12h8M8 16h4"/></svg>
+            </div>
+            <h3>Web Development</h3>
+            <p>Joined the WebX full-stack development workshop and mini project buildathon through the Enigma Association.</p>
+            <a class="text-link" href="#certification">Learn more <span aria-hidden="true">↗</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="certification section section-alt" id="certification" aria-labelledby="certification-title">
+      <div class="section-shell">
+        <div class="section-heading certification-heading reveal">
+          <h2 class="section-title" id="certification-title">My Certification</h2>
+        </div>
+        <div class="certificate-grid">
+          <article class="certificate-card reveal">
+            <button class="certificate-image" type="button" data-certificate="Java Developer_certificate.jpeg" data-title="Java Developer Certification" aria-label="View Java Developer Certification">
+              <img src="Java%20Developer_certificate.jpeg" alt="Java Developer Certification awarded to Vikram K V" loading="lazy">
+              <span class="certificate-view">Java Developer <span aria-hidden="true">↗</span></span>
+            </button>
+          </article>
+          <article class="certificate-card reveal">
+            <button class="certificate-image" type="button" data-certificate="Java%20Programming%20Fundamentals_certificate.jpeg" data-title="Java Programming Fundamentals Certificate" aria-label="View Java Programming Fundamentals Certificate">
+              <img src="Java%20Programming%20Fundamentals_certificate.jpeg" alt="Java Programming Fundamentals certificate" loading="lazy">
+              <span class="certificate-view">Java Programming <span aria-hidden="true">↗</span></span>
+            </button>
+          </article>
+          <article class="certificate-card reveal">
+            <button class="certificate-image" type="button" data-certificate="Java%20Language%20Features_certificate.jpeg" data-title="Java Language Features Certificate" aria-label="View Java Language Features Certificate">
+              <img src="Java%20Language%20Features_certificate.jpeg" alt="Java Language Features certificate" loading="lazy">
+              <span class="certificate-view">Java Language <span aria-hidden="true">↗</span></span>
+            </button>
+          </article>
+          <article class="certificate-card reveal" hidden>
+            <button class="certificate-image" type="button" data-certificate="Java%20SE%208%20Features_certificate.jpeg" data-title="Java SE 8 Features Certificate" aria-label="View Java SE 8 Features Certificate">
+              <img src="Java%20SE%208%20Features_certificate.jpeg" alt="Java SE 8 Features certificate" loading="lazy">
+              <span class="certificate-view">Java SE 8 <span aria-hidden="true">↗</span></span>
+            </button>
+          </article>
+          <article class="certificate-card reveal" hidden>
+            <button class="certificate-image" type="button" data-certificate="Kakunje%20Software_certificate.jpeg" data-title="Artificial Intelligence and Machine Learning Course Certificate" aria-label="View AI and Machine Learning course certificate">
+              <img src="Kakunje%20Software_certificate.jpeg" alt="Artificial Intelligence and Machine Learning course certificate from Kakunje Software" loading="lazy">
+              <span class="certificate-view">AI &amp; Machine Learning <span aria-hidden="true">↗</span></span>
+            </button>
+          </article>
+          <article class="certificate-card reveal" hidden>
+            <button class="certificate-image" type="button" data-certificate="webx_certificate.jpeg" data-title="WebX Full-Stack Web Development Workshop Certificate" aria-label="View WebX Full-Stack Web Development certificate">
+              <img src="webx_certificate.jpeg" alt="WebX Full-Stack Web Development workshop certificate" loading="lazy">
+              <span class="certificate-view">Full-Stack Web Development <span aria-hidden="true">↗</span></span>
+            </button>
+          </article>
+        </div>
+        <button class="button button-outline see-more" id="see-more-certificates" type="button" aria-expanded="false">See more</button>
+      </div>
+    </section>
+
+    <section class="projects section" id="projects" aria-labelledby="projects-title">
+      <div class="section-shell">
+        <div class="section-heading reveal">
+          <h2 class="section-title" id="projects-title">My <span>Project</span></h2>
+        </div>
+        <article class="project-card reveal">
+          <a class="project-preview" href="https://playslotajiet.netlify.app" target="_blank" rel="noopener noreferrer" aria-label="Open the Play Slot project website">
+            <img src="project_photo.jpeg" alt="Play Slot sports venue booking website showing featured facilities and booking options" loading="lazy">
+          </a>
+          <div class="project-details">
+            <p class="project-category">Web Project</p>
+            <h3>Play Slot</h3>
+            <p>A sports venue booking website to discover nearby grounds and courts, explore facilities, and find an available time slot to play.</p>
+            <a class="button button-primary project-link" href="https://playslotajiet.netlify.app" target="_blank" rel="noopener noreferrer">Visit Live Project <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact" aria-labelledby="contact-title">
+      <div class="section-shell contact-layout">
+        <div class="contact-copy reveal">
+          <h2 class="section-title" id="contact-title">Contact <span>Me</span></h2>
+          <p class="section-lead">I’m always happy to connect, learn from others, and hear about interesting opportunities.</p>
+          <div class="contact-links" aria-label="Contact and social links">
+            <a class="contact-email" href="mailto:vikramkv993@gmail.com">
+              <svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg>
+              vikramkv993@gmail.com <span aria-hidden="true">↗</span>
+            </a>
+            <a class="contact-email" href="https://linkedin.com/in/vikram-k-v" target="_blank" rel="noopener noreferrer">
+              <svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 10v7m0-10v.01M12 17v-7m0 3a3 3 0 0 1 6 0v4"/></svg>
+              LinkedIn <span aria-hidden="true">↗</span>
+            </a>
+            <a class="contact-email" href="https://github.com/vikramkv993-arch" target="_blank" rel="noopener noreferrer">
+              <svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              GitHub <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+          <p class="contact-location"><span class="status-dot"></span> Mangaluru, Karnataka, India</p>
+        </div>
+        <form class="contact-form reveal" id="contact-form">
+          <div class="form-row">
+            <label for="contact-name">Your name</label>
+            <input id="contact-name" name="name" type="text" placeholder="Your name" autocomplete="name" required>
+          </div>
+          <div class="form-row">
+            <label for="contact-email">Email address</label>
+            <input id="contact-email" name="email" type="email" placeholder="Your email" autocomplete="email" required>
+          </div>
+          <div class="form-row">
+            <label for="contact-message">Your message</label>
+            <textarea id="contact-message" name="message" rows="4" placeholder="Your message" required></textarea>
+          </div>
+          <button class="button button-primary form-submit" type="submit">Submit</button>
+          <p class="form-note">Your message will open in your default email application.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand" href="#home">Vikram<span>.</span></a>
+    <p>Made with curiosity <span aria-hidden="true">✦</span> © <span id="current-year">2026</span> Vikram K V</p>
+    <a class="back-to-top" href="#home">Back to top <span aria-hidden="true">↑</span></a>
+  </footer>
+
+  <dialog class="certificate-dialog" aria-label="Certificate preview">
+    <button class="dialog-close" type="button" aria-label="Close certificate preview">×</button>
+    <p class="dialog-title"></p>
+    <img class="dialog-image" src="" alt="">
+  </dialog>
+</body>
+</html>
